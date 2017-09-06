@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="win.zookfish.jpa.entity.UserInfoEntity">
+        <table name="user_info" schema="mybatis_spring" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="Id" precision="11"/>
+            </id>
+            <basic name="username">
+                <column name="username" length="32"/>
+            </basic>
+            <basic name="password">
+                <column name="password" nullable="false" length="32"/>
+            </basic>
+            <basic name="usertype">
+                <column name="usertype" nullable="false" length="2"/>
+            </basic>
+            <basic name="enabled">
+                <column name="enabled" nullable="false" precision="2"/>
+            </basic>
+            <basic name="realname">
+                <column name="realname" nullable="false" length="32"/>
+            </basic>
+            <basic name="qq">
+                <column name="qq" nullable="false" length="14"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false" length="100"/>
+            </basic>
+            <basic name="tel">
+                <column name="tel" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

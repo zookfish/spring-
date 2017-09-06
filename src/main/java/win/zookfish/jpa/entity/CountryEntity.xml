@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="win.zookfish.jpa.entity.CountryEntity">
+        <table name="country" schema="mybatis_spring" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="Id" precision="11"/>
+            </id>
+            <basic name="countryname">
+                <column name="countryname" nullable="false"/>
+            </basic>
+            <basic name="countrycode">
+                <column name="countrycode" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
