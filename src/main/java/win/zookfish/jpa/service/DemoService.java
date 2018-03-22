@@ -20,7 +20,7 @@ public class DemoService {
     public List<CountryEntity> getBy() {
 
 
-        List<CountryEntity> lists = userDao.findById(new PageRequest(1,20));
+        List<CountryEntity> lists = userDao.findById(new PageRequest(0,20));
         return  lists;
     }
 
